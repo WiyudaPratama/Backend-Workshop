@@ -1,0 +1,225 @@
+body {
+  font-family: 'Abel', sans-serif;
+  font-size: 16px;
+  background-color: #ffffff;
+}
+
+.navbar {
+  background-color: #061344;
+}
+
+.navbar .navbar-brand {
+  font-family: 'Righteous', cursive;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+}
+
+.navbar .navbar-brand:hover {
+  color: #ffffff;
+}
+
+.navbar .navbar-brand button span {
+  background-color: #ffffff;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  color: #9094A2;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #a7aab3;
+}
+
+.header .jumbotron {
+  background-color: #061344;
+  color: #ffffff;
+}
+
+.header .jumbotron .container .left-content h1 {
+  font-family: 'Righteous', cursive;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.home .right-content h1 {
+  font-family: 'Righteous', cursive;
+  color: #0c6b11;
+  font-size: 40px;
+}
+
+.home .right-content p {
+  font-size: 18px;
+}
+
+.home .right-content p span {
+  font-weight: bold;
+}
+
+.timeline-content h1 {
+  text-align: center;
+  font-family: 'Righteous', cursive;
+  color: #0c6b11;
+  font-size: 40px;
+}
+
+.faq h1 {
+  text-align: center;
+  font-family: 'Righteous', cursive;
+  color: #0c6b11;
+  font-size: 40px;
+}
+
+.faq .left-content img {
+  max-width: 500px;
+}
+
+.faq .right-content .accordion {
+  width: 100%;
+}
+
+.faq .right-content .accordion .card-header {
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.faq .right-content .accordion .card-header h2 button {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-decoration: none;
+  color: #494949;
+  font-weight: bold;
+}
+
+.registrasi h1 {
+  text-align: center;
+  font-family: 'Righteous', cursive;
+  color: #0c6b11;
+  font-size: 40px;
+}
+
+.daftar-peserta h1 {
+  text-align: center;
+  font-family: 'Righteous', cursive;
+  color: #0c6b11;
+  font-size: 40px;
+}
+
+footer {
+  margin-top: 100px;
+}
+
+footer h1 {
+  font-family: 'Righteous', cursive;
+  color: #0c6b11;
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+
+footer .contact-email h4 {
+  font-size: 18px;
+}
+
+footer .contact-email p {
+  color: #2ead34;
+}
+
+footer .contact-sosmed h4 {
+  font-size: 18px;
+}
+
+footer p span {
+  font-weight: bold;
+}
+
+.btn-daftar {
+  text-transform: uppercase;
+  font-size: bold;
+  background-color: #5ad460;
+  color: #fff;
+}
+
+.btn-daftar:hover {
+  background-color: #67dd6d;
+  color: #fff;
+}
+
+@media (max-width: 576px) {
+  .header .jumbotron .container .left-content {
+    text-align: center;
+  }
+  .header .jumbotron .container .left-content h1 {
+    font-size: 26px;
+  }
+  .header .jumbotron .container .right-content img {
+    display: none;
+  }
+  .home .left-content img {
+    max-width: 290px;
+  }
+  .home .right-content h1 {
+    font-size: 34px;
+  }
+  .faq .left-content img {
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .header .jumbotron .container .left-content {
+    text-align: center;
+  }
+  .header .jumbotron .container .left-content h1 {
+    font-size: 28px;
+  }
+  .header .jumbotron .container .right-content img {
+    display: none;
+  }
+  .home .left-content img {
+    max-width: 340px;
+  }
+  .home .right-content h1 {
+    font-size: 34px;
+  }
+  .faq .left-content img {
+    max-width: 350px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .header .jumbotron .container .left-content {
+    text-align: center;
+  }
+  .header .jumbotron .container .left-content h1 {
+    font-size: 30px;
+  }
+  .header .jumbotron .container .right-content img {
+    display: none;
+  }
+  .home .left-content img {
+    max-width: 350px;
+  }
+  .home .right-content h1 {
+    font-size: 34px;
+  }
+  .faq .left-content img {
+    max-width: 350px;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1024px) {
+  .header .jumbotron .container .left-content h1 {
+    font-size: 32px;
+  }
+  .header .jumbotron .container .right-content img {
+    max-width: 400px;
+  }
+  .faq .left-content img {
+    max-width: 450px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
