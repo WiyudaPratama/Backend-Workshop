@@ -47,12 +47,20 @@ body {
     color: #ffffff;
     
     .container {
-
       .left-content {
         h1 {
           font-family: 'Righteous', cursive;
           text-transform: uppercase;
           margin-bottom: 20px;
+        }
+      }
+
+      .right-content {
+        position: relative;
+        .alert {
+          position: absolute;
+          top: -65px;
+          right: 0;
         }
       }
     }
@@ -171,6 +179,27 @@ footer {
   p {
     span {
       font-weight: bold;
+    }
+  }
+  
+}
+
+// Backtotop
+.backtotop {
+  position: relative;
+  a {
+    img {
+      opacity: 0;
+      position: fixed !important;;
+      position:absolute;
+      bottom:40px;
+      right:40px;
+      z-index:999;
+      transition: .5s;
+    }
+
+    img.show {
+      opacity: 1;
     }
   }
 }
