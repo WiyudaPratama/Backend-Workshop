@@ -146,6 +146,45 @@ footer p span {
   font-weight: bold;
 }
 
+.section-login {
+  min-height: 100vh;
+}
+
+.section-login .card .card-body h1 {
+  font-family: 'Righteous', cursive;
+  color: #0c6b11;
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+
+.section-login .card .card-body p {
+  color: #8B8BA5;
+  font-weight: 400;
+}
+
+.section-login .card .card-body .form-control {
+  border-radius: 50px;
+  height: 50px;
+}
+
+.section-login .card .card-body .alamat {
+  border-radius: 40px;
+  height: 100px;
+}
+
+.section-login .card .card-body .btn-login {
+  text-transform: uppercase;
+  font-size: bold;
+  background-color: #5ad460;
+  color: #fff;
+  border-radius: 50px;
+}
+
+.section-login .card .card-body .btn-login:hover {
+  background-color: #67dd6d;
+  color: #fff;
+}
+
 .backtotop {
   position: relative;
 }

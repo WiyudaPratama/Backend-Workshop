@@ -184,6 +184,44 @@ footer {
   
 }
 
+// Login
+.section-login {
+  min-height: 100vh;
+  .card {
+    .card-body {
+      h1 {
+        font-family: 'Righteous', cursive;
+        color: #0c6b11;
+        font-size: 40px;
+        padding-bottom: 10px;
+      }
+      p {
+        color: #8B8BA5;
+        font-weight: 400;
+      }
+      .form-control {
+        border-radius: 50px;
+        height: 50px;
+      }
+      .alamat {
+        border-radius: 40px;
+        height: 100px;
+      }
+      .btn-login {
+        text-transform: uppercase;
+        font-size: bold;
+        background-color: #5ad460;
+        color: #fff;
+        border-radius: 50px;
+        &:hover {
+          background-color: #67dd6d;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
 // Backtotop
 .backtotop {
   position: relative;
