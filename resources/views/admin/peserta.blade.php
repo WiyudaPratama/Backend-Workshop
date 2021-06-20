@@ -20,14 +20,16 @@
   <div class="col-12">
     <table class="table table-striped table-bordered" style="width: 100%" id="daftarPeserta">
       <thead>
-        <th>No</th>
-        <th>Nama</th>
-        <th>NPM</th>
-        <th>Email</th>
-        <th>No WhatsApp</th>
-        <th>Status</th>
-        <th>Bukti Pembayaran</th>
-        <th>Aksi</th>
+        <tr>
+          <th>No</th>
+          <th>Nama</th>
+          <th>NPM</th>
+          <th>Email</th>
+          <th>No WhatsApp</th>
+          <th>Status</th>
+          <th>Bukti Pembayaran</th>
+          <th>Aksi</th>
+        </tr>
       </thead>
       <tbody>
         @php
@@ -42,9 +44,7 @@
             <td>{{ $participant->nohp }}</td>
             <td>{{ $participant->status }}</td>
             <td>
-              <div class="xzoom-container">
-                <img src="{{ url('/storage/image', $participant->image) }}" alt="Bukti Pembayaran" width="200px" class="xzoom" id="xzoom-default" xoriginal="{{ url('/storage/image', $participant->image) }}">
-              </div>
+              <a class="fancybox" rel="group" href="{{ url('/storage/image', $participant->image) }}"><img src="{{ url('/storage/image', $participant->image) }}" alt=""  width="200px"/></a>
             </td>
             <td>
               <form action="{{ route('peserta.update', $participant->id) }}" method="POST">

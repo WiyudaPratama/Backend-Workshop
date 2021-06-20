@@ -8,6 +8,11 @@ use Illuminate\Http\Request;
 
 class PesertaController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index()
     {
         $participants = Participant::orderBy('created_at', 'desc')->get();

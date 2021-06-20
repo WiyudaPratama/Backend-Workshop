@@ -18,7 +18,7 @@
       rel="stylesheet">
 
   <link rel="stylesheet" href="{{ url('frontend/library/datatables/datatables.min.css') }}">
-  <link rel="stylesheet" href="{{ url('frontend/library/xzoom/xzoom.css') }}">
+  <link rel="stylesheet" href="{{ url('frontend/library/facancybox/jquery.fancybox.min.css') }}">
 
   <!-- Custom styles for this template-->
   <link href="{{ url('frontend/library/sbadmin/css/sb-admin-2.min.css') }}" rel="stylesheet">
@@ -69,6 +69,7 @@
   @include('includes.modal')
 
   <!-- Bootstrap core JavaScript-->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
   <script src="{{ url('frontend/library/sbadmin/vendor/jquery/jquery.min.js') }}"></script>
   <script src="{{ url('frontend/library/sbadmin/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 
@@ -78,7 +79,7 @@
   <!-- Custom scripts for all pages-->
   <script src="{{ url('frontend/library/sbadmin/js/sb-admin-2.min.js') }}"></script>
   <script src="{{ url('frontend/library/datatables/datatables.min.js') }}"></script>
-  <script src="{{ url('frontend/library/xzoom/xzoom.min.js') }}"></script>
+  <script src="{{ url('frontend/library/facancybox/jquery.fancybox.min.js') }}"></script>
 
   <script>
     // Datatable
@@ -86,17 +87,11 @@
       $('#daftarPeserta').DataTable();
     } );
 
-    // xZoom
+    // Jquery Facancy
     $(document).ready(function() {
-      $('.xzoom, .xzoom-gallery').xzoom({
-        zoomWidth: 300,
-        zoomHeight: 200,
-        position: 'left',
-        title: false,
-        tint: '#333',
-        Xoffset: 15
-      });
+      $(".fancybox").fancybox();
     });
+
   </script>
 
 </body>

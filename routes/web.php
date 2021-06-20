@@ -24,5 +24,6 @@ Route::post('/store', [HomeController::class, 'store'])->name('store');
 Route::prefix('/admin')
       ->group(function() {
         Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+        Route::get('/peserta/report', [DashboardController::class, 'report'])->name('report');
         Route::resource('/peserta', PesertaController::class);
     });
