@@ -185,6 +185,17 @@ footer p span {
   color: #fff;
 }
 
+.xzoom-container {
+  display: block;
+}
+
+.xzoom-container .xzoom {
+  width: 100%;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin-bottom: 10px;
+}
+
 .backtotop {
   position: relative;
 }

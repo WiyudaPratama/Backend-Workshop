@@ -7,13 +7,18 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>SB Admin 2 - Dashboard</title>
+  <title>@yield('title')</title>
+
+  <link rel="shortcut icon" href="{{ url('frontend/image/Logo50.png') }}">
 
   <!-- Custom fonts for this template-->
   <link href="{{ url('frontend/library/sbadmin/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
   <link
       href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
       rel="stylesheet">
+
+  <link rel="stylesheet" href="{{ url('frontend/library/datatables/datatables.min.css') }}">
+  <link rel="stylesheet" href="{{ url('frontend/library/xzoom/xzoom.css') }}">
 
   <!-- Custom styles for this template-->
   <link href="{{ url('frontend/library/sbadmin/css/sb-admin-2.min.css') }}" rel="stylesheet">
@@ -72,6 +77,27 @@
 
   <!-- Custom scripts for all pages-->
   <script src="{{ url('frontend/library/sbadmin/js/sb-admin-2.min.js') }}"></script>
+  <script src="{{ url('frontend/library/datatables/datatables.min.js') }}"></script>
+  <script src="{{ url('frontend/library/xzoom/xzoom.min.js') }}"></script>
+
+  <script>
+    // Datatable
+    $(document).ready(function() {
+      $('#daftarPeserta').DataTable();
+    } );
+
+    // xZoom
+    $(document).ready(function() {
+      $('.xzoom, .xzoom-gallery').xzoom({
+        zoomWidth: 300,
+        zoomHeight: 200,
+        position: 'left',
+        title: false,
+        tint: '#333',
+        Xoffset: 15
+      });
+    });
+  </script>
 
 </body>
 

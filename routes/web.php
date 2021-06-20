@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 
 // Admin
 use App\Http\Controllers\Dashboard\DashboardController;
+use App\Http\Controllers\Dashboard\PesertaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,4 +24,5 @@ Route::post('/store', [HomeController::class, 'store'])->name('store');
 Route::prefix('/admin')
       ->group(function() {
         Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+        Route::resource('/peserta', PesertaController::class);
     });

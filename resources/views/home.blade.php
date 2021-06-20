@@ -382,7 +382,14 @@
                       <td>{{ $participant->nama }}</td>
                       <td>{{ $participant->npm }}</td>
                       <td>{{ $participant->email }}</td>
-                      <td>{{ $participant->nohp }}</td>
+                      <td>
+                        @php
+                          $sensor = substr($participant->nohp, 8, 4);
+                          $noPhone=explode($sensor,$participant->nohp);
+                          $newPhone=$noPhone[0]."XXXX".$noPhone[1];
+                        @endphp
+                        {{ $newPhone }}
+                      </td>
                       <td>{{ $participant->status }}</td>
                     </tr>
                   @endforeach
