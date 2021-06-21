@@ -296,6 +296,27 @@ footer {
       }
     }
   }
+
+  .backtotop {
+    position: relative;
+    a {
+      img {
+        display: none;
+        opacity: 0;
+        position: fixed !important;;
+        position:absolute;
+        bottom:40px;
+        right:40px;
+        z-index:999;
+        transition: .5s;
+      }
+  
+      img.show {
+        opacity: 1;
+      }
+    }
+  }
+  
 }
 
 @media (min-width: 577px) and (max-width: 768px) {

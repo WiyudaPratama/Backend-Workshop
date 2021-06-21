@@ -235,6 +235,23 @@ footer p span {
   .faq .left-content img {
     max-width: 300px;
   }
+  .backtotop {
+    position: relative;
+  }
+  .backtotop a img {
+    display: none;
+    opacity: 0;
+    position: fixed !important;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    z-index: 999;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  .backtotop a img.show {
+    opacity: 1;
+  }
 }
 
 @media (min-width: 577px) and (max-width: 768px) {

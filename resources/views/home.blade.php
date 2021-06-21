@@ -300,7 +300,7 @@
         </div>
       </div>
       <div class="row justify-content-center mt-5">
-        <div class="col-8">
+        <div class="col-12 col-lg-8 col-md-8">
           <div class="card shadow">
             <div class="card-body">
               <form action="{{ route('store') }}" method="POST" enctype="multipart/form-data">
@@ -361,7 +361,7 @@
         <div class="col-12">
           <div class="card shadow">
             <div class="card-body">
-              <table id="daftarPeserta" class="table table-striped table-bordered" style="width: 100%;">
+              <table id="daftarPeserta" class="table table-striped table-bordered table-responsive-sm table-responsive-md">
                 <thead>
                   <tr>
                     <th>No</th>
